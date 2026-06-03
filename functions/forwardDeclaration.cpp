@@ -11,7 +11,7 @@ void sayHello()// decalration
 
 int main(){
 
-    
+    sayHello();
 
     return 0;
 }
