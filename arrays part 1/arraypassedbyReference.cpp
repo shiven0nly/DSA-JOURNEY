@@ -3,11 +3,13 @@
 #include <iostream>
 using namespace std;
 
-int max_element_array(int *arr, int n) {
+int max_element_array(int *arr, int n)
+{
     int max = arr[0];
     for (int i = 1; i < n; i++)
     {
-        if (arr[i] > max) {
+        if (arr[i] > max)
+        {
             max = arr[i];
         }
     }
@@ -15,13 +17,14 @@ int max_element_array(int *arr, int n) {
     return max;
 }
 
-int main(){
+int main()
+{
 
     int a = 5;
     int *ptr = &a;
-    cout<<ptr<<endl;
+    cout << ptr << endl;
 
-    int arr[] = {1,2,3,4,5,6};
+    int arr[] = {1, 2, 3, 4, 5, 6};
     int n = sizeof(arr) / sizeof(arr[0]);
     cout << arr << endl; // genrally it will print the address of pointer.
     // basically the arr name 'arr' reference to the pointer, and it points to the memory address of arr[0]
