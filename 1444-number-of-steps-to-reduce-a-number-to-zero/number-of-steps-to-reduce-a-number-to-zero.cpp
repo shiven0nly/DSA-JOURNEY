@@ -2,7 +2,7 @@ class Solution {
 public:
     int numberOfSteps(int n) {
         int count = 0;
-        for(int i = n ; i > 0 ; i--){
+        while(n > 0){
             if(n==0){
                 break;
             }
